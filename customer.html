@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croii</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Croii Logo">
+            </div>
+            <nav>
+                <div class="nav-menu">
+                    <div><a href="#home">Home</a></div>
+                    <div><a href="#features">Features</a></div>
+                    <div><a href="#display">Customer</a></div> <!-- Add link to customer page-->
+                    <div><a href="#pricing">Pricing</a></div>
+                    <div><a href="#croii">Croii</a></div>
+                </div>
+            </nav>
+            <button class="cta-button">Sign Up</button>
+            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav');
+            const navMenu = document.querySelector('.nav-menu');
+    
+            nav.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+        </script>
+
+
+    <main>
+        <div class="auth-options">
+            <button class="cta-button">Sign Up</button>
+            <button class="cta-button">Log In</button>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search for services...">
+            <button class="search-button">Search</button>
+        </div>
+        <div class="service-headings">
+            <div>Barber</div>
+            <div>Hair Salon</div>
+            <div>Brows and Lashes</div>
+            <div>Nail Salon</div>
+            <div>Makeup</div>
+
+        </div>
+        <div class="info-sections">
+            <div id="section1" class="info-section-content">
+                <h3>Find the Perfect Barber for Your Style</h3>
+                <img src="images/visual/shave.jpg" alt="Example Image 1">
+                <p>Discover top-tier barber services at your fingertips with Croii. We connect you with expert barbers in your area, each skilled in delivering precise cuts and impeccable grooming tailored to the modern gentleman. Whether you’re looking for a classic style, a trendy fade, or a detailed beard trim, our platform makes it easy to find and book the perfect barber to suit your needs.</p>
+                <br>
+                <h4>Personalized Barber Recommendations</h4>
+                <p>At Croii, we understand that every client is unique. Our platform offers personalized recommendations based on your preferences, ensuring you find a barber who aligns with your style and grooming needs. Read reviews, browse portfolios, and select from a wide range of services to find the barber that best fits your personality and lifestyle.</p>
+                <br>
+                <h4>Seamless Booking Experience</h4>
+                <p>Booking a barber appointment has never been easier. With Croii, you can browse available time slots, choose your preferred appointment, and book instantly from the comfort of your home. Our user-friendly interface ensures a hassle-free experience, allowing you to focus on looking and feeling your best.</p>
+                <br>
+                <h4>Quality and Convenience</h4>
+                <p>We partner with only the best barbers who use premium products and offer exceptional service. Enjoy the convenience of booking your barber through our platform, and trust that you’ll receive top-quality grooming every time. Join Croii today and experience the ease and reliability of finding your ideal barber.</p>
+                <button class="cta-button">Learn More</button>
+            </div>
+            <div id="section2" class="info-section-content">
+                <h3>Discover Top Hair Salons Near You</h3>
+                <img src="images/visual/girlHair.jpg" alt="Example Image 2">
+                <p>Welcome to Croii, your ultimate destination for finding the best hair salons in your area. Whether you're looking for a chic cut, a stunning color transformation, or a special event styling, our platform connects you with professional hairstylists who are experts in their field. Browse through a curated selection of top-rated salons and book your next appointment with ease.</p>
+                <br>
+                <h4>Tailored Hair Services for Every Occasion</h4>
+                <p>At Croii, we understand that your hair is a reflection of your personal style and identity. That's why we offer a wide range of hair services to cater to every need. From precision cuts and vibrant color treatments to luxurious blowouts and elegant updos, you'll find the perfect salon and stylist to bring your hair vision to life. Our platform allows you to explore different salons, read customer reviews, and view stylist portfolios to ensure you make the best choice.</p>
+                <br>
+                <h4>Easy and Convenient Booking</h4>
+                <p>Booking a hair appointment has never been more convenient. With Croii, you can search for salons based on location, service type, and availability. Our user-friendly interface makes it simple to find and book an appointment that fits your schedule. Say goodbye to long wait times and phone calls—reserve your spot with just a few clicks and look forward to a seamless salon experience.</p>
+                <br>
+                <h4>Quality and Professionalism You Can Trust</h4>
+                <p>We partner with only the finest hair salons and stylists who are committed to excellence. Each salon featured on our platform meets high standards of quality and professionalism, ensuring you receive exceptional service every time. Whether you're prepping for a big event or simply in need of a trim, Croii is your go-to source for trusted hair care. Join our community today and discover the best hair salons near you!</p>
+                <button class="cta-button">Learn More</button>
+            </div>
+            <div id="section3" class="info-section-content">
+                <h3>Elevate Your Look with Expert Brows and Lashes</h3>
+                <img src="images/visual/lashes2.jpg" alt="Example Image 3">
+                <p>Enhance your natural beauty with stunning brows and lashes, expertly crafted by top professionals in your area. At Croii, we connect you with skilled specialists who offer a range of services to define and accentuate your features. From perfectly shaped brows to voluminous lash extensions, discover the perfect treatment to elevate your look and boost your confidence.</p>
+                <br>
+                <h4>Personalized Brows and Lashes Services</h4>
+                <p>Your brows and lashes are unique, and so are your beauty needs. At Croii, we provide personalized recommendations to help you find the right specialist for your desired style. Whether you're looking for a natural enhancement or a bold, dramatic effect, our platform allows you to explore various services such as brow shaping, tinting, microblading, and lash lifts or extensions. Browse through expert profiles, view their work, and choose the perfect professional to achieve your beauty goals.</p>
+                <br>
+                <h4>Convenient and Hassle-Free Booking</h4>
+                <p>Say goodbye to the hassle of booking beauty appointments with Croii. Our intuitive platform makes it easy to find available appointments and book your preferred time slot in just a few clicks. Filter by service, location, and ratings to find the best brows and lashes specialists near you. Enjoy the convenience of online booking and get ready to experience top-notch beauty treatments without the wait.</p>
+                <br>
+                <h4>Trust and Quality You Can Rely On</h4>
+                <p>We are dedicated to providing you with access to the highest quality brows and lashes services. All specialists featured on [Your Website Name] are thoroughly vetted to ensure they meet our stringent standards of excellence and professionalism. Whether you're preparing for a special event or looking to maintain your everyday look, you can trust that you'll receive outstanding service from experienced professionals. Join Croii today and discover the best brows and lashes treatments to enhance your natural beauty.</p>
+             
+                <button class="cta-button">Learn More</button>
+            </div>
+            <div id="section4" class="info-section-content">
+                <button class="close-button" onclick="closeSection('section4')">&times;</button>
+                <h3>Find the Best Nail Salons in Your Area</h3>
+                <img src="images/visual/nails.jpg" alt="Example Image 4">
+                <p>Welcome to Croii, your premier platform for discovering top-rated nail salons near you. Whether you're in need of a relaxing manicure, a durable gel polish, or an intricate nail art design, our site connects you with expert nail technicians who can cater to your every need. Explore our curated list of nail salons and book your next appointment with ease.</p>
+                <br>
+                <h4>Comprehensive Nail Services for Every Style</h4>
+                <p>Your brows and lashes are unique, and so are your beauty needs. At Croii, we provide personalized recommendations to help you find the right specialist for your desired style. Whether you're looking for a natural enhancement or a bold, dramatic effect, our platform allows you to explore various services such as brow shaping, tinting, microblading, and lash lifts or extensions. Browse through expert profiles, view their work, and choose the perfect professional to achieve your beauty goals.</p>
+                <br>
+                <h4>Easy Online Booking for Nail Appointments</h4>
+                <p>Say goodbye to the hassle of booking beauty appointments with Croii. Our intuitive platform makes it easy to find available appointments and book your preferred time slot in just a few clicks. Filter by service, location, and ratings to find the best brows and lashes specialists near you. Enjoy the convenience of online booking and get ready to experience top-notch beauty treatments without the wait.</p>
+                <br>
+                <h4>Quality and Professional Care You Deserve</h4>
+                <p>We are dedicated to providing you with access to the highest quality brows and lashes services. All specialists featured on Croii are thoroughly vetted to ensure they meet our stringent standards of excellence and professionalism. Whether you're preparing for a special event or looking to maintain your everyday look, you can trust that you'll receive outstanding service from experienced professionals. Join Croii today and discover the best brows and lashes treatments to enhance your natural beauty.</p>
+
+                <button class="cta-button">Learn More</button>
+            </div>
+            <div id="section5" class="info-section-content">
+                <button class="close-button" onclick="closeSection('section5')">&times;</button>
+                <h3>Discover Top Makeup Artists Near You</h3>
+                <img src="images/visual/makeup.jpg" alt="Example Image 5">
+                <p>Welcome to Croii, your ultimate resource for finding the best makeup artists in your area. Whether you’re preparing for a special event, a photoshoot, or simply want to enhance your everyday look, our platform connects you with skilled makeup professionals who can bring your beauty vision to life. Explore our selection of top-rated artists and book your next makeup session with confidence.</p>
+                <br>
+                <h4>Customized Makeup Services for Every Occasion</h4>
+                <p>At Croii, we understand that makeup is a powerful tool for expressing your unique style and personality. That’s why we feature a variety of makeup services tailored to different needs and occasions. From natural, everyday looks to glamorous, red-carpet-ready makeup, our artists specialize in a range of styles and techniques. Browse through artist profiles, view their portfolios, and select the perfect match for your specific event or personal preference.</p>
+                <br>
+                <h4>Convenient Online Booking for Makeup Appointments</h4>
+                <p>Say goodbye to the hassle of scheduling beauty appointments with Croii. Our user-friendly platform makes it easy to find available makeup artists and book appointments at your convenience. Filter by service, location, and artist ratings to quickly find the best options near you. With our seamless booking process, you can reserve your desired time slot in just a few clicks and look forward to a flawless makeup experience.</p>
+                <br>
+                <h4>Trusted Quality and Professionalism</h4>
+                <p>We are dedicated to providing you with access to the highest quality makeup services. All makeup artists featured on Croii undergo a thorough vetting process to ensure they meet our standards of excellence and professionalism. Whether you’re seeking a subtle enhancement or a bold transformation, you can trust that you’ll receive exceptional service from experienced and talented artists. Join Croii today and discover the best makeup artists to elevate your beauty routine.</p>
+                <button class="cta-button">Learn More</button>
+            </div>
+            <div id="section6" class="info-section-content">
+                <button class="close-button" onclick="closeSection('section6')">&times;</button>
+                <h3>Heading 6 Information</h3>
+                <img src="images/example6.jpg" alt="Example Image 6">
+                <p>Some information about Heading 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="cta-button">Learn More</button>
+            </div>
+            <div id="section7" class="info-section-content">
+                <button class="close-button" onclick="closeSection('section7')">&times;</button>
+                <h3>Heading 7 Information</h3>
+                <img src="images/example7.jpg" alt="Example Image 7">
+                <p>Some information about Heading 7. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="cta-button">Learn More</button>
+            </div>
+            <div id="section8" class="info-section-content">
+                <button class="close-button" onclick="closeSection('section8')">&times;</button>
+                <h3>Heading 8 Information</h3>
+                <img src="images/example8.jpg" alt="Example Image 8">
+                <p>Some information about Heading 8. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="cta-button">Learn More</button>
+            </div>
+            <div id="section9" class="info-section-content">
+                <button class="close-button" onclick="closeSection('section9')">&times;</button>
+                <h3>Heading 9 Information</h3>
+                <img src="images/example9.jpg" alt="Example Image 9">
+                <p>Some information about Heading 9. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="cta-button">Learn More</button>
+            </div>
+            <!-- Add similar sections for other headings -->
+        </div>
+    </main>
+
+    <section class="info-section">
+        <h2>Browse, Book and Pay for Services with Complete Ease</h2>
+        <p>Stay up to date with reminders built into your week.</p>
+        <div class="features-container">
+            <div class="feature">
+                <img src="images/icons/hairdresserIcon.png" alt="Find the service you need">
+                <h3>Find the service you need &#10004;</h3>
+            </div>
+            <div class="feature">
+                <img src="images/icons/bookingIcon.png" alt="Book to your convenience">
+                <h3>Book to your convenience &#10004;</h3>
+            </div>
+            <div class="feature">
+                <img src="images/icons/payIcon.png" alt="Pay how you like">
+                <h3>Pay how you like &#10004;</h3>
+            </div>
+            <div class="feature">
+                <img src="images/icons/browseIcon.png" alt="Browse an endless selection">
+                <h3>Browse an endless selection &#10004;</h3>
+            </div>
+            <div class="feature">
+                <img src="images/icons/rescheduleIcon.png" alt="Need to reschedule or cancel? No problem">
+                <h3>Need to reschedule or cancel? No problem &#10004;</h3>
+            </div>
+            <div class="feature">
+                <img src="images/icons/bestIcon.png" alt="Book with the best, wherever you are">
+                <h3>Book with the best, wherever you are &#10004;</h3>
+            </div>
+        </div>
+    </section>
+     
+    <h2 class="centered">Recommended for You</h2>
+    
+    <section class="recommended-section">
+  
+        <div class="card-container">
+            <div class="card">
+                <img src="images/visual/haircut.jpg" alt="Service 3">
+                <h3>Top 10 Haircuts for Men in 2024</h3>
+            </div>
+            <div class="card">
+                <img src="images/visual/blog2SkinTone.jpg" alt="Service 3">
+                <h3>How to Choose the Perfect Hair Color for Your Skin Tone</h3>
+            </div>
+            <div class="card">
+                <img src="images/visual/blog3.jpg" alt="Service 3">
+                <h3>The Ultimate Guide to Eyebrow Shaping</h3>
+            </div>
+            <div class="card">
+                <img src="images/visual/blog4.jpg" alt="Service 3">
+                <h3>Nail Art Trends to Try This Season</h3>
+            </div>
+            <div class="card">
+                <img src="images/visual/blog5.jpg" alt="Service 3">
+                <h3>Essential Grooming Tips for Beards and Mustaches</h3>
+            </div>
+            <div class="card">
+                <img src="images/visual/blog6.jpg" alt="Service 3">
+                <h3>Step-by-Step Guide to Applying Flawless Makeup</h3>
+            </div>
+            <div class="card">
+                <img src="images/visual/blog7.jpg" alt="Service 3">
+                <h3>Benefits of Regular Manicures and Pedicures</h3>
+            </div>
+            <div class="card">
+                <img src="images/visual/blog8.jpg" alt="Service 3">
+                <h3>How to Prepare Your Skin for a Makeup Session</h3>
+            </div>
+            <div class="card">
+                <img src="images/visual/blog9.jpg" alt="Service 3">
+                <h3>Choosing the Right Lash Extensions for Your Eye Shape</h3>
+            </div>
+            <div class="card">
+                <img src="images/visual/blog10.jpg" alt="Find the service you need">
+                <h3>DIY Hair Treatments for Healthy, Shiny Hair</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Croii Logo">
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-menu">
+                    <div><a href="#home">Home</a></div>
+                    <div><a href="#features">Services</div>
+                    <div><a href="#display">Features</a></div>
+                    <div><a href="#pricing">Recommended</a></div>
+                    <div><a href="#croii">Croii</a></div>
+                </div>
+            </nav>
+            <div class="footer-socials">
+                <a href="#facebook"><img src="images/icons/facebookIcon.png" alt="Facebook"></a>
+                <a href="#twitter"><img src="images/icons/twitterIcon.png" alt="Twitter"></a>
+                <a href="#instagram"><img src="images/icons/instagramIcon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const serviceHeadings = document.querySelectorAll('.service-headings div');
+        const infoSections = document.querySelectorAll('.info-section-content');
+
+        serviceHeadings.forEach((heading, index) => {
+            heading.addEventListener('click', () => {
+                const sectionToShow = document.getElementById(`section${index + 1}`);
+                if (sectionToShow.classList.contains('show')) {
+                    sectionToShow.classList.remove('show');
+                } else {
+                    infoSections.forEach(section => section.classList.remove('show'));
+                    if (sectionToShow) {
+                        sectionToShow.classList.add('show');
+                    }
+                }
+            });
+        });
+    });
+
+    </script>
+
+
+
+</body>
+</html>

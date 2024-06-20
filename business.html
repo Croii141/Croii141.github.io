@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croii Hub</title>
+    <link rel="stylesheet" href="business.css">
+    <script src="business.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/hublogo.png" alt="Croii Logo">
+            </div>
+            <nav>
+                <div class="nav-menu">
+                    <div><a href="#home">Home</a></div>
+                    <div><a href="#features">Features</a></div>
+                    <div><a href="#display">Customer</a></div> <!-- Add link to customer page-->
+                    <div><a href="#pricing">Pricing</a></div>
+                    <div><a href="#croii">Sign Up</a></div>
+                </div>
+            </nav>
+            <!--<button class="cta-button">Sign Up</button> --> <!-- Temperarlly removed -->
+            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home">
+            <div class="section-content">
+                <div style="text-align: center;">
+                    <h1>The Complete Solution for Your Business</h1>
+                    <p>Croii HUB helps you operate, grow and love your business.</p>
+                    <div id="logo-container">
+                        <img src="images/logo.png" alt="Logo" id="logo">
+                        <div id="hover-content">
+                            <h2>Grow Your Business, Expand Your Profits</h2>
+                            <p>Allow your business to flourish with A1 browsing, booking and payment capabilities for your customers. Deploy our software to ensure transactions and traffic keep flowing.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        
+        <section id="features">
+            <div class="section-content">
+                <h1>Features</h1>
+                <div class="features-grid">
+                    <div class="feature-item" data-image="images/visual/platform.png">
+                        <img src="images/icons/platformIcon.png" alt="Icon 1" class="feature-icon">
+                        <h2>A Complete Platform</h2>
+                        <p>Organize & simplify your business, increase your sales, give your customers & brand the help they need.</p>
+                    </div>
+                    <div class="feature-item" data-image="images/visual/exampleBooking.png">
+                        <img src="images/icons/manageIcon.png" alt="Icon 2" class="feature-icon">
+                        <h2>Manage Bookings, Payments and Operations from our App</h2>
+                        <ul>
+                            <li>Manage Bookings</li>
+                            <li>Manage Business and Staff Schedule</li>
+                            <li>Manage Services, and Prices</li>
+                            <li>Choose How You Want to be Paid</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item" data-image="images/visual/">
+                        <img src="images/icons/paymentIcon.png" alt="Icon 3" class="feature-icon">
+                        <h2>Customized Payment Capabilities</h2>
+                        <ul>
+                            <li>Receive instant payments</li>
+                            <li>Create 'no-show' fees</li>
+                            <li>Accept cash</li>
+                            <li>Charge upon completion</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item" data-image="images/visual/manageBooking.png">
+                        <img src="images/icons/scheduleIcon.png" alt="Icon 4" class="feature-icon">
+                        <h2>Schedule Management</h2>
+                        <p>Sit back and relax as you utilize our custom software to manage and control your business schedule.</p>
+                        <ul>
+                            <li>Add, view and edit bookings</li>
+                            <li>Cancel or rearrange bookings to best suit whatever situation you're in</li>
+                            <li>Distribute 'walk-in' bookings accordingly, based on your availability</li>
+                            <li>Become organized and ready for the day, week and month ahead</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item" data-image="images/visual/webApp.png">
+                        <img src="images/icons/webAppIcon.png" alt="Icon 5" class="feature-icon">
+                        <h2>Our Web-App</h2>
+                        <p>Utilize all our features, tools and opportunities from a clean-cut and simple platform.</p>
+                        <ul>
+                            <li>Click, install and go</li>
+                            <li>Just know, your customers can access our app from a single link</li>
+                            <li>Power your business from your hand</li>
+                            <li>Get notified on how your business is progressing</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item" data-image="images/icons/customBrand.png">
+                        <img src="images/icons/customBrand.png" alt="Icon 6" class="feature-icon">
+                        <h2>Custom Branded Platform</h2>
+                        <p>Take your business to the next level with a custom platform for your brand.</p>
+                        <ul>
+                            <li>Custom branded platform to support bookings and payments</li>
+                            <li>Easy to access link for your customers to install</li>
+                            <li>Forget about development & maintenance, and think about your brand</li>
+                            <li>Tools and features, simply endless</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+<!-- ADD IN IMAGE SECTION   -->
+        <section id="display">
+            <div class="section-content">
+                <img id="display-image" src="images/hublogo.png" alt="Default Image">
+            </div>
+        </section>
+        <section id="pricing">
+            <div class="section-content">
+                <h1>Pricing</h1>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h2>Solo</h2>
+                        <p class="price">£0/mo</p>
+                        <p>(2.9% + 20p Per transaction)</p>
+                        <ul>
+                            <li>Control how you're paid</li>
+                            <li>Croii platform, with all features</li>
+                            <li>Unlimited notifications</li>
+                            <li>24hr Customer support</li>
+                        </ul>
+                        <button>Get Started</button>
+                    </div>
+                    <div class="pricing-card highlight">
+                        <h2>One Location</h2>
+                        <p class="price">£0/mo</p>
+                        <p>(2.9% + 20p Per transaction)</p>
+                        <ul>
+                            <li>Control how you're paid</li>
+                            <li>Croii platform, with all features</li>
+                            <li>Individual staff logins</li>
+                            <li>Unlimited notifications</li>
+                            <li>24hr Customer support</li>
+                        </ul>
+                        <button>Get Started</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h2>Two Locations</h2>
+                        <p class="price">£79/mo</p>
+                        <ul>
+                            <li>Control how you're paid</li>
+                            <li>Croii platform, with all features</li>
+                            <li>Individual staff logins</li>
+                            <li>Two location access</li>
+                            <li>Unlimited notifications</li>
+                            <li>24hr Customer support</li>
+                            <li>Customer Engagement</li>
+                        </ul>
+                        <button>Get Started</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h2>Three+ Locations</h2>
+                        <p class="price">£119/mo</p>
+                        <ul>
+                            <li>Control how you're paid</li>
+                            <li>Croii platform, with all features</li>
+                            <li>Individual staff logins</li>
+                            <li>Multiple location access</li>
+                            <li>Unlimited notifications</li>
+                            <li>24hr Customer support</li>
+                            <li>Customer Engagement</li>
+                        </ul>
+                        <button>Get Started</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h2>Custom Branded App</h2>
+                        <p class="price">£149/mo</p>
+                        <ul>
+                            <li>Unique app for your staff and customers</li>
+                            <li>Control how you're paid</li>
+                            <li>Croii platform, with all features</li>
+                            <li>Individual staff logins</li>
+                            <li>Multiple location access</li>
+                            <li>Unlimited notifications</li>
+                            <li>24hr Customer support</li>
+                            <li>Customer Engagement</li>
+                        </ul>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="croii">
+            <div class="section-content">
+                <h1>Explore Croii</h1>
+                <p>Browse, book, and pay for an endless selection of services near you.</p>
+                <div class="croii-grid">
+                    <div class="croii-item" data-description="Browse a wide selection of services">
+                        <img src="images/icons/browseIcon.png" alt="Browse Icon">
+                        <h2>Browse</h2>
+                    </div>
+                    <div class="croii-item" data-description="Easily book appointments with just a few clicks">
+                        <img src="images/icons/bookingIcon.png" alt="Book Icon">
+                        <h2>Book</h2>
+                    </div>
+                    <div class="croii-item" data-description="Secure and convenient payment options">
+                        <img src="images/icons/payIcon.png" alt="Pay Icon">
+                        <h2>Pay</h2>
+                    </div>
+                </div>
+                <button class="cta-button">Get Started</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Croii Logo">
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-menu">
+                    <div><a href="#home">Home</a></div>
+                    <div><a href="#features">Features</a></div>
+                    <div><a href="#display">Display</a></div>
+                    <div><a href="#pricing">Pricing</a></div>
+                    <div><a href="#croii">Croii</a></div>
+                </div>
+            </nav>
+            <div class="footer-socials">
+                <a href="#facebook"><img src="images/icons/facebookIcon.png" alt="Facebook"></a>
+                <a href="#twitter"><img src="images/icons/twitterIcon.png" alt="Twitter"></a>
+                <a href="#instagram"><img src="images/icons/instagramIcon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

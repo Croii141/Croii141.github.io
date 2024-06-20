@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croii Landing Page</title>
+    <link rel="stylesheet" href="splash.css">
+    <script src="splash."></script>
+
+   
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Croii Logo">
+            </div>
+            <nav>
+                <div class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#display">Customer</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#croii">Croii</a>
+                </div>
+            </nav>
+            <button class="cta-button">Sign Up</button>
+            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('nav');
+            const navMenu = document.querySelector('.nav-menu');
+    
+            nav.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+        </script>
+
+
+    <main>
+        <div class="slideshow">
+            <img src="images/2020_09.24_Shutterstock_1820689556_VintageBarberChair_BodyStock.webp" alt="Slide 1">
+            <img src="images/hair1.png" alt="Slide 2">
+            <img src="images/hair2.png" alt="Slide 3">
+        </div>
+        <div class="overlay">
+        </div>
+        <div class="intro">
+            <h1>Welcome to Croii</h1>
+            <p>Whether you're here to find the best services or to grow your business, Croii has got you covered.</p>
+        </div>
+        <div class="cta-buttons">
+            <a href="customer.html" class="cta-button">Find Services</a>
+            <a href="business.html" class="cta-button">List Your Business</a>
+        </div>
+    </main>
+
+    <script>
+    const slides = document.querySelectorAll('.slideshow img');
+    let currentIndex = 0;
+
+    function showNextSlide() {
+        slides[currentIndex].classList.remove('active');
+        slides[currentIndex].classList.add('prev');
+        
+        currentIndex = (currentIndex + 1) % slides.length;
+        
+        slides[currentIndex].classList.remove('next');
+        slides[currentIndex].classList.add('active');
+        
+        // Reset the position for the next image
+        let nextIndex = (currentIndex + 1) % slides.length;
+        slides[nextIndex].classList.remove('prev');
+        slides[nextIndex].classList.add('next');
+    }
+
+    // Initialize the first image as active and the second as next
+    slides[currentIndex].classList.add('active');
+    if (slides.length > 1) {
+        slides[1].classList.add('next');
+    }
+
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+
+    </script>
+
+
+    
+    <section class="features-section">
+        <h2>Why Choose Croii?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <img src="images/icons/MagnifyingIcon.png" alt="Find Services">
+                <h3>Find Services</h3>
+                <p>Easily search and book the services you need with just a few clicks.</p>
+            </div>
+            <div class="feature">
+                <img src="images/icons/listIcon.png" alt="List Your Business">
+                <h3>List Your Business</h3>
+                <p>Grow your business by reaching new customers through our platform.</p>
+            </div>
+            <div class="feature">
+                <img src="images/icons/scheduleIcon.png" alt="Manage Your Schedule">
+                <h3>Manage Your Schedule</h3>
+                <p>Effortlessly manage bookings and appointments to keep your business running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/icon-512x512.png" alt="Croii Logo">
+            </div>
+            <nav class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#display">Display</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#croii">Croii</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="#facebook"><img src="images/icons/facebookIcon.png" alt="Facebook"></a>
+                <a href="#twitter"><img src="images/icons/twitterIcon.png" alt="Twitter"></a>
+                <a href="#instagram"><img src="images/icons/instagramIcon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

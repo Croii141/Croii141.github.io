@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(180deg, #004896, #007BFF, #004896);
+    padding: 0px;
+    position: fixed;
+    z-index: 2; /* Ensure the header is above other elements */
+    width: 100%;
+    top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 130px;
+    padding-top: 15px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-menu a {
+    color: white; /* Make sure the links are readable on the blue background */
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+}
+
+.nav-menu a:hover {
+    color: #007BFF; /* Change link color on hover */
+    text-shadow: none; /* Remove text shadow on hover for clarity */
+}
+
+.cta-button {
+    background-color: white;
+    color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+.cta-button:hover {
+    background-color: #007BFF;
+    color: white;
+    text-shadow: none; /* Remove text shadow on hover for clarity */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto; /* Remove top margin */
+    padding: 120px 20px 20px; /* Add top padding to fit the height of your fixed header */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.haircut {
+    margin-bottom: 40px;
+}
+
+.haircut h2 {
+    color: #555;
+}
+
+.haircut p {
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(0deg, #0056b3, #ffffff);
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    max-height: 50px;
+}
+
+.footer-nav {
+    margin: 20px 0;
+}
+
+.footer-nav a {
+    color: white;
+    font-weight: 700;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #cce7ff;
+}
+
+.footer-socials {
+    margin-top: 20px;
+}
+
+.footer-socials a img {
+    max-height: 30px;
+    transition: transform 0.3s;
+    margin: 0 10px;
+}
+
+.footer-socials a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature {
+        width: 100%;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 1;
+}
