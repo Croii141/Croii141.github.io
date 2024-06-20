@@ -10,3 +10,7 @@ How to run preview: Open splash.html into any web browser (double click the file
 -when the inspect panel opens up. hold CONTROL and SHIFT then press M.
 -this will open up the mobile view menu. from here you can select the phone type form the menu at the top of the screen 
 -you can then interact with the website as if it were on mobile
+
+
+
+edit test
