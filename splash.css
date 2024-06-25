@@ -20,21 +20,54 @@
     z-index: 2; /* Ensure the header is above other elements */
 }
 
+/* Enhanced Header Styles */
+header {
+    background: linear-gradient(180deg, #004896, #007BFF, #004896);
+    padding: 20px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.header-container img {
-    height: 100px;
+.logo img {
+    max-height: 50px;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
 }
 
 .nav-menu a {
-    color: white; /* Make sure the links are readable on the blue background */
     text-decoration: none;
-    padding: 0 15px;
-    transition: color 0.3s;
+    color: white;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
 }
 
@@ -48,42 +81,50 @@
     color: #007BFF;
     border: none;
     padding: 10px 20px;
-    text-transform: uppercase;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
 }
 
 .cta-button:hover {
-    background-color: #007BFF;
-    color: white;
-    text-shadow: none; /* Remove text shadow on hover for clarity */
+    background-color: #cce7ff;
+    color: #0056b3;
 }
 
 .hamburger-menu {
     display: none;
+    font-size: 24px;
     cursor: pointer;
-    color: white; /* Ensure the hamburger menu icon is visible */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+    color: white;
 }
 
 @media (max-width: 768px) {
-            .header-container,
-            .footer-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .footer-nav {
-                margin-top: 20px;
-            }
-            .features-container {
-                flex-direction: column;
-                gap: 20px;
-            }
-            .feature {
-                width: 100%;
-            }
-        }
+    .nav-menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: left;
+    }
+
+    .cta-button {
+        margin-top: 10px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
         /* Main styles */
         main {
             flex: 1;
